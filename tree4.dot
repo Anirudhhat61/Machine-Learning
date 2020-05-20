@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Light <= 0.251\ngini = 0.355\nsamples = 20559\nvalue = [15810, 4749]"] ;
+1 [label="HumidityRatio <= 0.934\ngini = 0.003\nsamples = 15643\nvalue = [15617, 26]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Light <= 0.18\ngini = 0.003\nsamples = 15641\nvalue = [15617, 24]"] ;
+1 -> 2 ;
+3 [label="gini = 0.001\nsamples = 15316\nvalue = [15308, 8]"] ;
+2 -> 3 ;
+4 [label="gini = 0.094\nsamples = 325\nvalue = [309, 16]"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]"] ;
+1 -> 5 ;
+6 [label="CO2 <= 0.036\ngini = 0.075\nsamples = 4916\nvalue = [193, 4723]"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="Light <= 0.268\ngini = 0.485\nsamples = 29\nvalue = [17, 12]"] ;
+6 -> 7 ;
+8 [label="gini = 0.32\nsamples = 10\nvalue = [2, 8]"] ;
+7 -> 8 ;
+9 [label="gini = 0.332\nsamples = 19\nvalue = [15, 4]"] ;
+7 -> 9 ;
+10 [label="Humidity <= 0.454\ngini = 0.069\nsamples = 4887\nvalue = [176, 4711]"] ;
+6 -> 10 ;
+11 [label="gini = 0.133\nsamples = 2030\nvalue = [146, 1884]"] ;
+10 -> 11 ;
+12 [label="gini = 0.021\nsamples = 2857\nvalue = [30, 2827]"] ;
+10 -> 12 ;
+}
